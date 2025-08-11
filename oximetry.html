@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Case Study – COVID Oximetry @ Home</title>
+  <meta name="description" content="Case study of the COVID Oximetry @ Home service design project." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header container">
+      <a class="brand-pill" href="index.html">Stephen O'Callaghan</a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="about.html">about</a></li>
+        </ul>
+      </nav>
+    </header>
+
+ 
+  <main id="main" class="container case-study">
+    <aside class="sidebar">
+  <div class="sidebar__section">
+    <h2 class="sidebar__title">🧑‍💻 Role</h2>
+    <p><strong>Service Designer</strong></p>
+  </div>
+
+  <div class="sidebar__section">
+    <h2 class="sidebar__title">⏱ Duration</h2>
+    <p><strong>Dec 2020 – Nov 2021</strong></p>
+  </div>
+
+  <div class="sidebar__section">
+    <h2 class="sidebar__title">🛠 Tools & Methods</h2>
+    <ul>
+      <li>Service blueprinting</li>
+      <li>Moderated user research</li>
+      <li>Figma wireframing</li>
+      <li>Journey mapping</li>
+      <li>Stakeholder workshops</li>
+    </ul>
+  </div>
+
+  <div class="sidebar__section">
+    <h2 class="sidebar__title">💡 Key Skills</h2>
+    <ul>
+      <li>Service design</li>
+      <li>User research</li>
+      <li>Accessibility & inclusion</li>
+      <li>Multidisciplinary collaboration</li>
+    </ul>
+  </div>
+
+  <div class="sidebar__section highlight">
+    <h2 class="sidebar__title">📈 Impact</h2>
+    <p><strong>Informed design</strong> of subsequent NHS remote monitoring pilots through reusable patterns and blueprints.</p>
+  </div>
+</aside>
+
+    <article class="content">
+      <header class="cs-hero">
+        <h1>COVID Oximetry @ Home</h1>
+        <p class="cs-summary">
+          Designing a citizen-facing tool for patients to submit home oxygen saturation readings and a clinician dashboard to review and act on out‑of‑range results, aiming to reduce hospital admissions through early intervention.
+        </p>
+        <img src="assets/oximetry/hero_image.jpg" alt="Mockup of COVID Oximetry @ Home patient and clinician views" />
+      </header>
+
+      <section>
+        <h2>Context & Problem</h2>
+        <p>
+          The COVID Oximetry @ Home initiative enabled patients at risk of deterioration to monitor their oxygen saturation using a pulse oximeter provided by their GP or hospital. 
+          At the time, most data submission relied on manual phone check‑ins or SMS surveys, placing strain on clinical teams and risking delays in identifying patients whose oxygen levels were dropping.
+        </p>
+        <p>
+          We proposed a digital front end for citizens to record readings directly into an NHS‑branded interface, paired with a clinician-facing backend to triage out‑of‑range readings. 
+          The service needed to work for patients with limited digital literacy while meeting NHS England’s clinical safety and governance requirements.
+        </p>
+      </section>
+
+      <section>
+        <h2>Objectives & Constraints</h2>
+        <ul>
+          <li>Enable easy, secure input of oximetry readings by patients or carers.</li>
+          <li>Notify clinicians when readings fell below thresholds.</li>
+          <li>Provide a clear review interface for clinicians to manage alerts.</li>
+          <li>Work alongside manual check‑in pathways.</li>
+          <li>Comply with NHS data security, clinical safety (DCB0129/DCB0160), and accessibility standards.</li>
+        </ul>
+        <p>
+          Constraints included rapid delivery timelines, no integration with patient record systems in the MVP, and the need to support patients without smartphones through an accessible mobile‑optimised web app.
+        </p>
+      </section>
+
+      <section>
+        <h2>Process</h2>
+        <h3>Discover</h3>
+        <p>
+          Collaborated with NHS user researchers running interviews and usability sessions with patients and clinical teams. 
+          We mapped the end‑to‑end journey from receiving an oximeter kit to submitting readings and clinician follow‑up.
+        </p>
+        <img src="assets/oximetry/process_diagram.jpg" alt="Service blueprint overview" />
+
+        <h3>Design</h3>
+        <p>
+          Led creation of the service blueprint covering citizen and clinician journey stages, backstage processes, and infrastructure. 
+          Produced patient and clinician flow diagrams and low‑fidelity wireframes in Figma.
+        </p>
+        <img src="assets/oximetry/wireframe.jpg" alt="Low‑fidelity wireframes for patient and clinician views" />
+
+        <h3>Deliver</h3>
+        <p>
+          Presented designs to the NHS England design assurance panel, demonstrating alignment with the NHS Service Standard, accessibility compliance, and a proposed clinical safety case approach.
+        </p>
+        <img src="assets/oximetry/final_ui.jpg" alt="Prototype screens for patient reading input and clinician dashboard" />
+      </section>
+
+      <section>
+        <h2>Key Decisions & Trade‑offs</h2>
+        <blockquote>
+          “To meet urgency requirements, we chose a standalone web application for the MVP rather than integrating with clinical systems, with API integration planned for later phases.”
+        </blockquote>
+      </section>
+
+      <section>
+        <h2>Outcomes & Impact</h2>
+        <p>
+          Although the concept passed early design assurance, the project was not taken forward due to shifting pandemic priorities and funding constraints. 
+          However, the blueprint, flows, and accessibility patterns informed subsequent remote monitoring pilots.
+        </p>
+      </section>
+
+      <section>
+        <h2>Reflections & Next Steps</h2>
+        <p>
+          This project reinforced the importance of inclusive design in health crisis technology — balancing simplicity for citizens with clinical safety requirements. 
+          The design patterns developed could be adapted for chronic condition remote monitoring.
+        </p>
+      </section>
+    </article>
+  </main>
+
+    <section class="cta container" aria-labelledby="cta-title">
+      <h2 id="cta-title" class="display cta-text" aria-label="Let's work together">
+        <span aria-hidden="true">Let’s w<span>🚀</span>rk</span><br/>
+        <span aria-hidden="true">t<span class="ghost">o</span>g<span class="ghost">e</span>th<span class="ghost">e</span>r</span>
+      </h2>
+      <p><a class="biglink" href="mailto:stephenocall3@gmail.com">stephenocall3@gmail.com</a></p>
+    </section>
+
+</body>
+</html>

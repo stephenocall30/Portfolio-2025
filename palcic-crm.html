@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Case Study – Palcic Taekwondo CRM</title>
+  <meta name="description" content="Case study of the Palcic Taekwondo CRM." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header container">
+    <a class="brand" href="index.html">Your Name</a>
+    <nav class="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mailto:you@example.com">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container case-study">
+    <aside class="sidebar">
+      <div class="sidebar__section"><h2 class="sidebar__title">Role</h2><p>UX Designer & Researcher</p></div>
+      <div class="sidebar__section"><h2 class="sidebar__title">Duration</h2><p>Apr – Jun 2025</p></div>
+      <div class="sidebar__section"><h2 class="sidebar__title">Tools & Methods</h2><ul><li>Figma</li><li>HTML/CSS Prototyping</li><li>User Interviews</li><li>Journey Mapping</li></ul></div>
+      <div class="sidebar__section"><h2 class="sidebar__title">Key Skills</h2><ul><li>Service Design</li><li>Information Architecture</li><li>Usability Testing</li></ul></div>
+      <div class="sidebar__section"><h2 class="sidebar__title">Impact</h2><p>Reduced admin time by 40% and improved payment compliance by 25%.</p></div>
+    </aside>
+
+    <article class="content">
+      <header class="cs-hero">
+        <h1>Palcic Taekwondo CRM</h1>
+        <p class="cs-summary">A custom CRM to manage students, billing, grading, and reporting.</p>
+        <img src="assets/case1.jpg" alt="CRM dashboard mockup" />
+      </header>
+
+      <section><h2>Context & Problem</h2><p>Manual spreadsheets and paper forms slowed down admin and created errors. The goal was a centralised tool for student records, payments, and reporting.</p></section>
+      <section><h2>Objectives & Constraints</h2><ul><li>Fast add/update for student records</li><li>Automated payment reminders</li><li>Reports for attendance, payments, grading</li></ul><p>Constraints: modest budget, simple hosting, non‑technical staff.</p></section>
+      <section><h2>Process</h2>
+        <h3>Discover</h3><p>Interviews with staff; mapped workflows; minimum viable dataset from spreadsheets.</p>
+        <h3>Design</h3><p>Wireframes for student list, detail, add student, payments, reporting; tested navigation and terms.</p>
+        <h3>Deliver</h3><p>Responsive web app with role‑based access; email/SMS reminders; exportable PDF reports.</p>
+      </section>
+      <section><h2>Key Decisions & Trade‑offs</h2><blockquote>“Limit advanced reporting in MVP to keep core features rock‑solid.”</blockquote></section>
+      <section><h2>Outcomes & Impact</h2><ul><li>Registration time 10 → 3 minutes</li><li>Overdue accounts down 25% in Q1</li><li>Clear grading readiness reports</li></ul></section>
+      <section><h2>Reflections & Next Steps</h2><p>Add QR attendance and a parent portal for billing and grading updates.</p></section>
+    </article>
+  </main>
+
+  <footer class="site-footer container"><p>© <span id="year"></span> Your Name</p></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

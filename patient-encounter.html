@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Patient Encounter History – Case Study</title>
+  <meta name="description" content="An anonymised NHS case study on designing a clinician-facing patient encounter history for urgent and emergency care." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header container">
+    <a class="brand-pill" href="index.html">Stephen O'Callaghan</a>
+<nav class="primary-nav" aria-label="Primary">
+  <ul>
+    <li><a href="about.html">about</a></li>
+  </ul>
+</nav>
+  </header>
+
+  <main id="main" class="container case-study">
+    <aside class="sidebar">
+      <div class="sidebar__section">
+        <h2 class="sidebar__title">Role</h2>
+        <p><strong>Service Designer</strong></p>
+      </div>
+      <div class="sidebar__section">
+        <h2 class="sidebar__title">Duration</h2>
+        <p><strong>Apr – Oct 2022</strong></p>
+      </div>
+      <div class="sidebar__section">
+        <h2 class="sidebar__title">Tools & Methods</h2>
+        <ul>
+          <li>Service blueprinting</li>
+          <li>Clinician interviews</li>
+          <li>Figma wireframing</li>
+          <li>Prototyping</li>
+          <li>Workflow mapping</li>
+        </ul>
+      </div>
+      <div class="sidebar__section">
+        <h2 class="sidebar__title">Key Skills</h2>
+        <ul>
+          <li>Service design</li>
+          <li>Information architecture</li>
+          <li>Accessibility & inclusion</li>
+          <li>Stakeholder engagement</li>
+        </ul>
+      </div>
+      <div class="sidebar__section highlight">
+        <h2 class="sidebar__title">Impact</h2>
+        <p><strong>Validated patterns</strong> for presenting UEC encounter history, improving clinical context and informing national interoperability work.</p>
+      </div>
+    </aside>
+
+    <article class="content">
+      <header class="cs-hero">
+        <h1>Patient Encounter History</h1>
+        <p class="cs-summary">
+          Designing a secure, usable view of urgent and emergency care encounters so clinicians can scan, filter, and act with confidence during time‑critical decisions.
+        </p>
+        <!-- Update image path -->
+        <img src="assets/patient-encounter/hero_image.jpg" alt="Prototype of clinician-facing patient encounter history" />
+      </header>
+
+      <section>
+        <h2>Context & Problem</h2>
+        <p>
+          Urgent and Emergency Care (UEC) spans 111 online/telephony, Clinical Assessment Services, GP out-of-hours, urgent treatment centres, and emergency departments. Because these services run on different systems, clinicians rarely see a complete picture of a patient’s recent encounters.
+        </p>
+        <p>
+          The result: patients repeat their story at multiple touchpoints; clinicians piece together context from partial records; opportunities to spot deterioration, unmet needs, or patterns (e.g. frequent attendances) are harder to identify.
+        </p>
+      </section>
+
+      <section>
+        <h2>Objectives & Constraints</h2>
+        <ul>
+          <li>Provide a consolidated, chronological view of encounters with fast filtering by date, setting, and type.</li>
+          <li>Support clinical decision‑making without adding cognitive load to high‑pressure workflows.</li>
+          <li>Align with NHS service standards, accessibility (WCAG 2.2) and clinical safety expectations.</li>
+          <li>Explore integration paths with regional shared care records.</li>
+        </ul>
+        <p>
+          Constraints included fragmented data sources (e.g. 111 Repeat Caller Service only covers 111 telephony), gaps for GP out‑of‑hours and ED, and varied information governance across regions.
+        </p>
+      </section>
+
+      <section>
+        <h2>Research</h2>
+        <p>
+          We spoke with <strong>19 patients</strong> who had recently used 111 and <strong>40 UEC professionals</strong> (from frontline clinicians to programme and technical leads) across England.
+        </p>
+        <ul>
+          <li><strong>Patients:</strong> Most prioritised effective care over privacy concerns and expected clinicians to “already have their information”. Those with complex needs were most frustrated by repeating details.</li>
+          <li><strong>Clinicians:</strong> Encounter history was more useful later in the episode of care (e.g. CAS/ED) and always interpreted alongside other clinical information. Regional maturity varied; some areas were close to solving this, others had little provision.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Process</h2>
+        <h3>Discover</h3>
+        <p>
+          Mapped the UEC data landscape (encounters vs episodes), identified boundary/integration gaps, and prioritised moments where encounter history adds the most value.
+        </p>
+
+        <h3>Design</h3>
+        <p>
+          Produced a <strong>service blueprint</strong> showing when and how encounter history should surface; created low‑fidelity Figma prototypes focused on rapid scan, sorting, and filtering. Content design emphasised plain language and clear time/place cues.
+        </p>
+        <!-- Update image path -->
+        <img src="assets/patient-encounter/blueprint.jpg" alt="Service blueprint showing encounter data surfacing across UEC" />
+
+        <h3>Validate</h3>
+        <p>
+          Ran clinician feedback sessions to refine hierarchy (e.g. encounter type prominence, referral indicators) and interactions. Explored alignment with regional shared care record initiatives.
+        </p>
+      </section>
+
+      <section>
+        <h2>Outcomes & Impact</h2>
+        <ul>
+          <li>Delivered a validated prototype and <strong>reusable patterns</strong> for encounter history in UEC contexts.</li>
+          <li>Informed national interoperability planning by highlighting governance/integration blockers and pragmatic sequencing.</li>
+          <li>Provided groundwork for more nuanced “repeat caller” triggers and trend detection.</li>
+        </ul>
+        <!-- Update image path -->
+        <img src="assets/patient-encounter/ui_prototype.jpg" alt="UI prototype of encounter list with filters and patient context" />
+      </section>
+
+      <section>
+        <h2>Reflection</h2>
+        <p>
+          Technology alone doesn’t fix the visibility gap: progress depends on governance, regional collaboration, and alignment with shared care records. The design challenge was balancing <strong>speed, clarity, and safety</strong> for time‑critical use.
+        </p>
+      </section>
+    </article>
+  </main>
+
+      <section class="cta container" aria-labelledby="cta-title">
+      <h2 id="cta-title" class="display cta-text" aria-label="Let's work together">
+        <span aria-hidden="true">Let’s w<span>🚀</span>rk</span><br/>
+        <span aria-hidden="true">t<span class="ghost">o</span>g<span class="ghost">e</span>th<span class="ghost">e</span>r</span>
+      </h2>
+      <p><a class="biglink" href="mailto:stephenocall3@gmail.com">stephenocall3@gmail.com</a></p>
+    </section>
+</body>
+</html>
