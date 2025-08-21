@@ -139,135 +139,163 @@
       </section>
 
       <!-- Horizontal Career Timeline -->
-      <section class="container" aria-labelledby="timeline-title">
+      <section class="container timeline-combined" aria-labelledby="cv-title">
         <div class="row-head">
-          <h2 id="timeline-title">Career timeline</h2>
+          <h2 id="cv-title">Career Timeline</h2>
+          <div class="filters" role="tablist" aria-label="Filter timeline">
+            <button
+              class="filter-pill is-active"
+              data-filter="all"
+              role="tab"
+              aria-selected="true"
+            >
+              All
+            </button>
+            <button
+              class="filter-pill"
+              data-filter="experience"
+              role="tab"
+              aria-selected="false"
+            >
+              Experience
+            </button>
+            <button
+              class="filter-pill"
+              data-filter="education"
+              role="tab"
+              aria-selected="false"
+            >
+              Education
+            </button>
+          </div>
         </div>
 
-        <div
-          class="timeline"
-          id="timeline"
-          tabindex="0"
-          role="region"
-          aria-label="Career timeline"
-        >
-          <ol class="timeline-track" role="list">
-            <!-- Item -->
-            <li
-              class="timeline-item"
-              aria-label="2025 – Freelance / NHS & public sector"
-            >
-              <div class="dot" aria-hidden="true"></div>
-              <div class="t-card">
-                <time class="t-year">2020</time>
-                <h3 class="t-role">Senior UX designer</h3>
-                <p class="t-org">AireLogic</p>
-                <details>
-                  <summary>Highlights</summary>
-                  <ul>
-                    <li>
-                      Designed human-centred digital health services for NHS
-                      England, DHSC, and DfE projects.
-                    </li>
-                    <li>
-                      Facilitated service blueprinting, user journey mapping,
-                      and discovery workshops with diverse stakeholders.
-                    </li>
-                    <li>
-                      Delivered prototypes and usability testing for services
-                      reaching millions of users, from patient record access to
-                      vaccination booking.
-                    </li>
-                  </ul>
-                </details>
-              </div>
-            </li>
+        <ol class="timeline-list">
+          <li class="year-label" aria-hidden="true">
+            <span>2020 to Present</span>
+          </li>
 
-            <li
-              class="timeline-item"
-              aria-label="2023–2024 – Designer / Researcher"
-            >
-              <div class="dot" aria-hidden="true"></div>
-              <div class="t-card">
-                <time class="t-year">2017–20</time>
-                <h3 class="t-role">Design manager</h3>
-                <p class="t-org">William Hill</p>
-                <details>
-                  <summary>Highlights</summary>
-                  <ul>
-                    <li>
-                      Managed a multi-disciplinary design team delivering
-                      responsive interfaces for high-traffic betting platforms.
-                    </li>
-                    <li>
-                      Led a design system overhaul that reduced duplicated UI
-                      components by 60%, improving consistency across apps.
-                    </li>
-                    <li>
-                      Introduced accessibility audits and WCAG-compliant
-                      patterns into core design processes.
-                    </li>
-                  </ul>
-                </details>
-              </div>
-            </li>
+          <!-- Experience example -->
+          <li class="t-item" data-type="experience">
+            <div class="t-dot" aria-hidden="true"></div>
+            <article class="t-card">
+              <header class="t-head">
+                <span class="t-range">2020–Present</span>
+                <span class="t-badge t-badge--exp">Experience</span>
+              </header>
+              <h3 class="t-title">Senior UX / Service Designer</h3>
+              <p class="t-org">AireLogic (Consultancy)</p>
+            </article>
+          </li>
 
-            <li
-              class="timeline-item"
-              aria-label="2021–2022 – Service Designer, COVID"
-            >
-              <div class="dot" aria-hidden="true"></div>
-              <div class="t-card">
-                <time class="t-year">2016–18</time>
-                <h3 class="t-role">Co-founder</h3>
-                <p class="t-org">Kraken Design Agency</p>
-                <details>
-                  <summary>Highlights</summary>
-                  <ul>
-                    <li>
-                      Led end-to-end delivery of over 20 bespoke branding and
-                      web design projects for SMEs and charities.
-                    </li>
-                    <li>
-                      Built long-term client relationships through clear
-                      communication, transparent pricing, and iterative design
-                      sprints.
-                    </li>
-                  </ul>
-                </details>
-              </div>
-            </li>
+          <li class="t-item" data-type="education">
+            <div class="t-dot" aria-hidden="true"></div>
+            <article class="t-card">
+              <header class="t-head">
+                <span class="t-range">2024</span>
+                <span class="t-badge t-badge--edu">Education</span>
+              </header>
+              <h3 class="t-title">
+                Google UX Design Professional Certification
+              </h3>
+              <p class="t-org">Google</p>
+            </article>
+          </li>
 
-            <li class="timeline-item" aria-label="2019–2020 – Product Designer">
-              <div class="dot" aria-hidden="true"></div>
-              <div class="t-card">
-                <time class="t-year">2012–16</time>
-                <h3 class="t-role">Digital Designer</h3>
-                <p class="t-org">Palcic Taekwondo</p>
-                <details>
-                  <summary>Highlights</summary>
-                  <ul>
-                    <li>
-                      Designed and launched a bespoke club management platform,
-                      streamlining student enrolment, grading, and payment
-                      tracking.
-                    </li>
-                    <li>
-                      Created a flexible visual identity system adaptable for
-                      certificates, uniforms, event banners, and digital
-                      channels.
-                    </li>
-                    <li>
-                      Produced accessible, mobile-first designs that improved
-                      parent engagement and reduced missed payment reminders by
-                      35%
-                    </li>
-                  </ul>
-                </details>
-              </div>
-            </li>
-          </ol>
-        </div>
+          <li class="t-item" data-type="education">
+            <div class="t-dot" aria-hidden="true"></div>
+            <article class="t-card">
+              <header class="t-head">
+                <span class="t-range">2022</span>
+                <span class="t-badge t-badge--edu">Education</span>
+              </header>
+              <h3 class="t-title">IBM Design thinking co-creator</h3>
+              <p class="t-org">IBM</p>
+            </article>
+          </li>
+
+          <li class="t-item" data-type="education">
+            <div class="t-dot" aria-hidden="true"></div>
+            <article class="t-card">
+              <header class="t-head">
+                <span class="t-range">2020</span>
+                <span class="t-badge t-badge--edu">Education</span>
+              </header>
+              <h3 class="t-title">
+                Dynamic User Experience: Design and Usability
+              </h3>
+              <p class="t-org">Interaction Design Foundation</p>
+            </article>
+          </li>
+
+          <li class="year-label" aria-hidden="true">
+            <span>2015 to 2020</span>
+          </li>
+
+          <li class="t-item" data-type="experience">
+            <div class="t-dot" aria-hidden="true"></div>
+            <article class="t-card">
+              <header class="t-head">
+                <span class="t-range">2017–2020</span>
+                <span class="t-badge t-badge--exp">Experience</span>
+              </header>
+              <h3 class="t-title">Design manager</h3>
+              <p class="t-org">William Hill</p>
+            </article>
+          </li>
+
+          <li class="t-item" data-type="education">
+            <div class="t-dot" aria-hidden="true"></div>
+            <article class="t-card">
+              <header class="t-head">
+                <span class="t-range">2018</span>
+                <span class="t-badge t-badge--edu">Education</span>
+              </header>
+              <h3 class="t-title">Learn HTML and CSS</h3>
+              <p class="t-org">CodeAcademy</p>
+            </article>
+          </li>
+
+          <li class="t-item" data-type="experience">
+            <div class="t-dot" aria-hidden="true"></div>
+            <article class="t-card">
+              <header class="t-head">
+                <span class="t-range">2016–2018</span>
+                <span class="t-badge t-badge--exp">Experience</span>
+              </header>
+              <h3 class="t-title">Co-Founder</h3>
+              <p class="t-org">Kraken Design Agency</p>
+            </article>
+          </li>
+
+          <li class="year-label" aria-hidden="true">
+            <span>2010 to 2015</span>
+          </li>
+
+          <li class="t-item" data-type="experience">
+            <div class="t-dot" aria-hidden="true"></div>
+            <article class="t-card">
+              <header class="t-head">
+                <span class="t-range">2012–2016</span>
+                <span class="t-badge t-badge--exp">Experience</span>
+              </header>
+              <h3 class="t-title">Digital designer</h3>
+              <p class="t-org">Palcic Taekwondo</p>
+            </article>
+          </li>
+
+          <li class="t-item" data-type="education">
+            <div class="t-dot" aria-hidden="true"></div>
+            <article class="t-card">
+              <header class="t-head">
+                <span class="t-range">2011</span>
+                <span class="t-badge t-badge--edu">Education</span>
+              </header>
+              <h3 class="t-title">DipHE Graphic Design</h3>
+              <p class="t-org">University of Bedfordshire</p>
+            </article>
+          </li>
+        </ol>
       </section>
 
       <!-- Values (optional) -->
@@ -278,6 +306,7 @@
 
           <ul class="pill-list" role="list">
             <li class="pill">Evidence-led</li>
+                        <li class="pill">Continuous professional development</li>
             <li class="pill">Plain English</li>
             <li class="pill">Accessibility first</li>
             <li class="pill">Inclusive by default</li>
@@ -311,7 +340,9 @@
           class="display cta-text"
           aria-label="Let's work together"
         >
-          <span aria-hidden="true">Let’s talk <br>P<span>🌎</span>ssibilities</span>
+          <span aria-hidden="true"
+            >Let’s talk <br />P<span>🌎</span>ssibilities</span
+          >
         </h2>
         <p>
           <a class="biglink" href="mailto:stephenocall3@gmail.com"
@@ -320,5 +351,6 @@
         </p>
       </section>
     </main>
+    <script src="scripts/timeline.js" defer></script>
   </body>
 </html>

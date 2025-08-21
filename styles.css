@@ -634,17 +634,90 @@ h3 {
   font-size: .75rem; line-height: 1;
 }
 
-.circled { position: relative; display: inline-block; z-index: 0; }
+.circled {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
 
-/* ONE LINE, URL-ENCODED (# → %23). No line breaks. */
+/* Default: ellipse */
 .circled::before {
   content: "";
-  position: absolute; inset: -10% -8% -15% -8%;
+  position: absolute;
+  inset: -12% -8% -18% -8%; /* tweak for snug fit */
   z-index: -1;
-  background: no-repeat center/contain;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 70'><ellipse cx='100' cy='35' rx='95' ry='26' fill='none' stroke='%23f995be' stroke-width='10' stroke-linecap='round'/></svg>");
+  background: no-repeat center/contain url("assets/circle-pink.svg");
   pointer-events: none;
-  transform: rotate(-5deg);
+}
+
+/* Alternate: squiggle */
+.circled.squiggle::before {
+  background-image: url("assets/squiggle-green.svg");
+}
+
+/*TIMELINE 2.0 */
+
+/* Container + header */
+.timeline-combined .row-head {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 1rem; margin: .5rem 0 1rem;
+}
+.filter-pill {
+  border: 1px solid var(--line); background: #fff; border-radius: 999px;
+  padding: .35rem .7rem; cursor: pointer; font-size: var(--step--1);
+}
+.filter-pill.is-active { background: #f6f8ff; border-color: color-mix(in srgb, var(--accent) 30%, var(--line)); }
+
+/* Timeline line */
+.timeline-list { position: relative; margin: 0; padding: 0; list-style: none; }
+.timeline-list::before {
+  content: ""; position: absolute; left: 1rem; top: 0; bottom: 0;
+  width: 2px; background: var(--line);
+}
+
+/* Year labels */
+.year-label { position: relative; margin: 1.25rem 0 .5rem 0; padding-left: 2.5rem; }
+.year-label span {
+  display: inline-block; font-weight: 700; color: var(--muted);
+  background: #fff; padding: .15rem .5rem; border: 1px solid var(--line); border-radius: 999px;
+}
+
+/* Items */
+.t-item { position: relative; padding-left: 2.5rem; margin: 0 0 1rem; }
+.t-dot {
+  position: absolute; left: .65rem; top: .9rem; width: 10px; height: 10px; border-radius: 999px; background: var(--accent);
+}
+.t-card {
+  border: 1px solid var(--line); background: #fff; border-radius: 12px;
+  padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,.03);
+}
+.t-head { display: flex; gap: .5rem; align-items: center; justify-content: space-between; }
+.t-range { font-weight: 600; color: var(--muted); }
+
+/* Badges */
+.t-badge {
+  font-size: .75rem;
+  padding: .2rem .5rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+}
+.t-badge--exp { background: #eef6ff; border-color: #d6e7ff; }
+.t-badge--edu { background: #eefcf1; border-color: #d7f4dc; }
+
+
+/* Titles */
+.t-title { margin: .1rem 0; font-size: var(--step-0); }
+.t-org { margin: 0 0 .5rem 0; color: var(--muted); }
+
+/* Details */
+.t-card details summary { cursor: pointer; }
+.t-card details ul { margin: .5rem 0 0 1rem; }
+
+/* Mobile niceties */
+@media (max-width: 640px){
+  .timeline-list::before { left: .8rem; }
+  .t-item { padding-left: 2rem; }
+  .t-dot { left: .45rem; }
 }
 
 
